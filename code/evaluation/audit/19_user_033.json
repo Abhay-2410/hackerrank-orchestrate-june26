@@ -1,0 +1,83 @@
+{
+  "user_id": "user_033",
+  "claim_object": "package",
+  "extracted_claim": {
+    "claimed_issue_types": [
+      "crushed_packaging"
+    ],
+    "claimed_parts": [
+      "box",
+      "package_side",
+      "contents",
+      "item"
+    ],
+    "severity_claimed": "major",
+    "issue_families": [
+      "general claim review",
+      "crushed, torn, or seal damage",
+      "reviewability",
+      "contents or inner item"
+    ],
+    "multi_image": false,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_PACKAGE_EXTERIOR",
+    "REQ_PACKAGE_CONTENTS",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_019\\img_1.jpg",
+        "blur_score": 2789.2595432764165,
+        "is_blurry": false,
+        "brightness": 150.4703808835673,
+        "is_dark": false,
+        "is_glare": true,
+        "width": 560,
+        "height": 346,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.6184971098265897,
+        "is_extreme_crop": false,
+        "perceptual_hash": "1111111111111111000000000000111000011110000111100001111100011110",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [
+      "low_light_or_glare"
+    ],
+    "all_unusable": false,
+    "summary_text": "- img_1: brightness=150"
+  },
+  "confidence": 0.73,
+  "primary_output": {
+    "evidence_standard_met": false,
+    "evidence_standard_met_reason": "The image shows a food can, not a shipping box/package as claimed.",
+    "risk_flags": "wrong_object;user_history_risk;low_light_or_glare",
+    "issue_type": "unknown",
+    "object_part": "unknown",
+    "claim_status": "contradicted",
+    "claim_status_justification": "The user claims a shipping box was crushed, but the image provided is of a canned good, not a shipping package.",
+    "supporting_image_ids": "none",
+    "valid_image": false,
+    "severity": "none"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": false,
+    "evidence_standard_met_reason": "The image shows a food can, not a shipping box/package as claimed.",
+    "risk_flags": "wrong_object;user_history_risk;low_light_or_glare",
+    "issue_type": "unknown",
+    "object_part": "unknown",
+    "claim_status": "contradicted",
+    "claim_status_justification": "The user claims a shipping box was crushed, but the image provided is of a canned good, not a shipping package.",
+    "supporting_image_ids": "none",
+    "valid_image": false,
+    "severity": "none"
+  }
+}

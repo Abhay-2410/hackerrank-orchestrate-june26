@@ -1,0 +1,18 @@
+{
+  "timestamp_utc": "2026-06-19T12:52:46.296368+00:00",
+  "provider": "ollama",
+  "model": "gemma4:31b",
+  "test_claims": 44,
+  "failed_claims": 0,
+  "api_calls": 44,
+  "primary_calls": 44,
+  "verify_calls": 0,
+  "escalations": 0,
+  "input_tokens": 103491,
+  "output_tokens": 11753,
+  "images_processed": 82,
+  "elapsed_seconds": 266.4,
+  "seconds_per_claim": 6.06,
+  "output_csv": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\output.csv",
+  "pipeline": "signature_stack"
+}

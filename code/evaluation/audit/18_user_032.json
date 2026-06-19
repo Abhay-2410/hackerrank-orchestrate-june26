@@ -1,0 +1,99 @@
+{
+  "user_id": "user_032",
+  "claim_object": "package",
+  "extracted_claim": {
+    "claimed_issue_types": [
+      "missing_part"
+    ],
+    "claimed_parts": [
+      "box",
+      "package_side",
+      "contents",
+      "item"
+    ],
+    "severity_claimed": "unknown",
+    "issue_families": [
+      "general claim review",
+      "crushed, torn, or seal damage",
+      "multi-image rows",
+      "reviewability",
+      "contents or inner item"
+    ],
+    "multi_image": true,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_GENERAL_MULTI_IMAGE",
+    "REQ_PACKAGE_EXTERIOR",
+    "REQ_PACKAGE_CONTENTS",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_018\\img_1.jpg",
+        "blur_score": 3022.472249657554,
+        "is_blurry": false,
+        "brightness": 125.59927333333333,
+        "is_dark": false,
+        "is_glare": false,
+        "width": 1200,
+        "height": 500,
+        "is_low_resolution": false,
+        "aspect_ratio": 2.4,
+        "is_extreme_crop": false,
+        "perceptual_hash": "1111111110100001111011100011111000011011000111100000110000000000",
+        "usable": true
+      },
+      {
+        "image_id": "img_2",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_018\\img_2.jpg",
+        "blur_score": 613.8668047551611,
+        "is_blurry": false,
+        "brightness": 121.747572586727,
+        "is_dark": false,
+        "is_glare": false,
+        "width": 728,
+        "height": 408,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.7843137254901962,
+        "is_extreme_crop": false,
+        "perceptual_hash": "0000000000111111111111101111111011111100101111001111100011111000",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [],
+    "all_unusable": false,
+    "summary_text": "- img_1: acceptable quality\n- img_2: acceptable quality"
+  },
+  "confidence": 0.63,
+  "primary_output": {
+    "evidence_standard_met": false,
+    "evidence_standard_met_reason": "While the images show an open box and its exterior, a photo of an open box filled with packing material cannot prove that a specific item is missing, as the item could be buried or the images do not show the expected contents compared to an order manifest.",
+    "risk_flags": "manual_review_required",
+    "issue_type": "unknown",
+    "object_part": "contents",
+    "claim_status": "not_enough_information",
+    "claim_status_justification": "The images show the exterior of the package and the interior filled with packing peanuts/paper, but there is no visual evidence to confirm the absence of the specific ordered item (e.g., no comparison to what should be there or evidence of theft).",
+    "supporting_image_ids": "img_1",
+    "valid_image": true,
+    "severity": "unknown"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": false,
+    "evidence_standard_met_reason": "While the images show an open box and its exterior, a photo of an open box filled with packing material cannot prove that a specific item is missing, as the item could be buried or the images do not show the expected contents compared to an order manifest.",
+    "risk_flags": "manual_review_required",
+    "issue_type": "unknown",
+    "object_part": "contents",
+    "claim_status": "not_enough_information",
+    "claim_status_justification": "The images show the exterior of the package and the interior filled with packing peanuts/paper, but there is no visual evidence to confirm the absence of the specific ordered item (e.g., no comparison to what should be there or evidence of theft).",
+    "supporting_image_ids": "img_1",
+    "valid_image": true,
+    "severity": "unknown"
+  }
+}

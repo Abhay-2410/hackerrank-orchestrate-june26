@@ -1,0 +1,100 @@
+{
+  "user_id": "user_012",
+  "claim_object": "laptop",
+  "extracted_claim": {
+    "claimed_issue_types": [
+      "dent"
+    ],
+    "claimed_parts": [
+      "corner",
+      "port"
+    ],
+    "severity_claimed": "unknown",
+    "issue_families": [
+      "general claim review",
+      "screen, keyboard, or trackpad",
+      "hinge, lid, corner, body, or port",
+      "multi-image rows",
+      "reviewability",
+      "dent or scratch"
+    ],
+    "multi_image": true,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_GENERAL_MULTI_IMAGE",
+    "REQ_LAPTOP_SCREEN_KEYBOARD_TRACKPAD",
+    "REQ_LAPTOP_BODY_HINGE_PORT",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_012\\img_1.jpg",
+        "blur_score": 976.2826144600574,
+        "is_blurry": false,
+        "brightness": 155.2697991111111,
+        "is_dark": false,
+        "is_glare": true,
+        "width": 2000,
+        "height": 1125,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.7777777777777777,
+        "is_extreme_crop": false,
+        "perceptual_hash": "0010000000111000001111100111111001111110011111000001110000000100",
+        "usable": true
+      },
+      {
+        "image_id": "img_2",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_012\\img_2.jpg",
+        "blur_score": 201.28817829847603,
+        "is_blurry": false,
+        "brightness": 106.10420227488875,
+        "is_dark": false,
+        "is_glare": false,
+        "width": 2064,
+        "height": 1728,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.1944444444444444,
+        "is_extreme_crop": false,
+        "perceptual_hash": "0000000000000111000011110001111100011111001111110011111100000000",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [
+      "low_light_or_glare"
+    ],
+    "all_unusable": false,
+    "summary_text": "- img_1: brightness=155\n- img_2: acceptable quality"
+  },
+  "confidence": 0.9,
+  "primary_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "The claimed object (laptop) is visible in img_1, and the claimed damage (dent) is clearly visible in the close-up img_2.",
+    "risk_flags": "low_light_or_glare",
+    "issue_type": "dent",
+    "object_part": "corner",
+    "claim_status": "supported",
+    "claim_status_justification": "Image 2 provides clear evidence of a dent on the laptop body/corner as described by the user.",
+    "supporting_image_ids": "img_2",
+    "valid_image": true,
+    "severity": "medium"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "The claimed object (laptop) is visible in img_1, and the claimed damage (dent) is clearly visible in the close-up img_2.",
+    "risk_flags": "low_light_or_glare",
+    "issue_type": "dent",
+    "object_part": "corner",
+    "claim_status": "supported",
+    "claim_status_justification": "Image 2 provides clear evidence of a dent on the laptop body/corner as described by the user.",
+    "supporting_image_ids": "img_2",
+    "valid_image": true,
+    "severity": "medium"
+  }
+}

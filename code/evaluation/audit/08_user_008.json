@@ -1,0 +1,81 @@
+{
+  "user_id": "user_008",
+  "claim_object": "car",
+  "extracted_claim": {
+    "claimed_issue_types": [
+      "scratch"
+    ],
+    "claimed_parts": [
+      "hood",
+      "body"
+    ],
+    "severity_claimed": "unknown",
+    "issue_families": [
+      "general claim review",
+      "vehicle identity or orientation",
+      "reviewability",
+      "dent or scratch"
+    ],
+    "multi_image": false,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_CAR_BODY_PANEL",
+    "REQ_CAR_IDENTITY_OR_SIDE",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_008\\img_1.jpg",
+        "blur_score": 1315.9498526998323,
+        "is_blurry": false,
+        "brightness": 38.02841316118284,
+        "is_dark": true,
+        "is_glare": false,
+        "width": 1470,
+        "height": 980,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.5,
+        "is_extreme_crop": false,
+        "perceptual_hash": "0011111011111110011111101001011000111100000000000000000000000000",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [
+      "low_light_or_glare"
+    ],
+    "all_unusable": false,
+    "summary_text": "- img_1: brightness=38"
+  },
+  "confidence": 0.75,
+  "primary_output": {
+    "evidence_standard_met": false,
+    "evidence_standard_met_reason": "The image shows severe structural destruction and total vehicle wreckage, which does not match the specific claim of a simple scratch on the hood.",
+    "risk_flags": "low_light_or_glare;user_history_risk;claim_mismatch;possible_manipulation",
+    "issue_type": "broken_part",
+    "object_part": "body",
+    "claim_status": "contradicted",
+    "claim_status_justification": "The user claimed a 'scratch across the top panel' of the hood, but the image shows a completely totaled vehicle with massive structural damage, missing parts, and extreme deformation. This is a major claim mismatch.",
+    "supporting_image_ids": "img_1",
+    "valid_image": true,
+    "severity": "high"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": false,
+    "evidence_standard_met_reason": "The image shows severe structural destruction and total vehicle wreckage, which does not match the specific claim of a simple scratch on the hood.",
+    "risk_flags": "low_light_or_glare;user_history_risk;claim_mismatch;possible_manipulation",
+    "issue_type": "broken_part",
+    "object_part": "body",
+    "claim_status": "contradicted",
+    "claim_status_justification": "The user claimed a 'scratch across the top panel' of the hood, but the image shows a completely totaled vehicle with massive structural damage, missing parts, and extreme deformation. This is a major claim mismatch.",
+    "supporting_image_ids": "img_1",
+    "valid_image": true,
+    "severity": "high"
+  }
+}

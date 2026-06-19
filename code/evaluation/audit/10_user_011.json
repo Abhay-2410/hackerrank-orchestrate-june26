@@ -1,0 +1,82 @@
+{
+  "user_id": "user_011",
+  "claim_object": "laptop",
+  "extracted_claim": {
+    "claimed_issue_types": [
+      "water_damage",
+      "stain"
+    ],
+    "claimed_parts": [
+      "screen",
+      "keyboard",
+      "port"
+    ],
+    "severity_claimed": "unknown",
+    "issue_families": [
+      "general claim review",
+      "screen, keyboard, or trackpad",
+      "hinge, lid, corner, body, or port",
+      "reviewability",
+      "water, stain, or label damage"
+    ],
+    "multi_image": false,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_LAPTOP_SCREEN_KEYBOARD_TRACKPAD",
+    "REQ_LAPTOP_BODY_HINGE_PORT",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_011\\img_1.jpg",
+        "blur_score": 2551.1409930990903,
+        "is_blurry": false,
+        "brightness": 87.90212793733681,
+        "is_dark": false,
+        "is_glare": false,
+        "width": 766,
+        "height": 400,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.915,
+        "is_extreme_crop": false,
+        "perceptual_hash": "1000000010000000100000001000000011000000100000011100111111111110",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [],
+    "all_unusable": false,
+    "summary_text": "- img_1: acceptable quality"
+  },
+  "confidence": 0.97,
+  "primary_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "The image clearly shows the laptop keyboard area with visible liquid droplets and residue, matching the claim.",
+    "risk_flags": "none",
+    "issue_type": "stain",
+    "object_part": "keyboard",
+    "claim_status": "supported",
+    "claim_status_justification": "Visual evidence shows liquid on the keyboard, supporting the user's claim of a water spill and subsequent staining/residue.",
+    "supporting_image_ids": "img_1",
+    "valid_image": true,
+    "severity": "medium"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "The image clearly shows the laptop keyboard area with visible liquid droplets and residue, matching the claim.",
+    "risk_flags": "none",
+    "issue_type": "stain",
+    "object_part": "keyboard",
+    "claim_status": "supported",
+    "claim_status_justification": "Visual evidence shows liquid on the keyboard, supporting the user's claim of a water spill and subsequent staining/residue.",
+    "supporting_image_ids": "img_1",
+    "valid_image": true,
+    "severity": "medium"
+  }
+}

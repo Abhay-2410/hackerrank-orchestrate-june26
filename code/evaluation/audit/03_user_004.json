@@ -1,0 +1,98 @@
+{
+  "user_id": "user_004",
+  "claim_object": "car",
+  "extracted_claim": {
+    "claimed_issue_types": [
+      "crack"
+    ],
+    "claimed_parts": [
+      "windshield"
+    ],
+    "severity_claimed": "minor",
+    "issue_families": [
+      "general claim review",
+      "vehicle identity or orientation",
+      "multi-image rows",
+      "reviewability",
+      "crack, broken, or missing part"
+    ],
+    "multi_image": true,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_GENERAL_MULTI_IMAGE",
+    "REQ_CAR_GLASS_LIGHT_MIRROR",
+    "REQ_CAR_IDENTITY_OR_SIDE",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_003\\img_1.jpg",
+        "blur_score": 2136.9389236582037,
+        "is_blurry": false,
+        "brightness": 117.58014574299676,
+        "is_dark": false,
+        "is_glare": true,
+        "width": 928,
+        "height": 501,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.8522954091816368,
+        "is_extreme_crop": false,
+        "perceptual_hash": "1111110100000100000011110000011000000111011001110000000010000111",
+        "usable": true
+      },
+      {
+        "image_id": "img_2",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_003\\img_2.jpg",
+        "blur_score": 653.9060751126606,
+        "is_blurry": false,
+        "brightness": 140.59895416673118,
+        "is_dark": false,
+        "is_glare": true,
+        "width": 1866,
+        "height": 1246,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.4975922953451044,
+        "is_extreme_crop": false,
+        "perceptual_hash": "0001101100001100000011000000011100000011000011111111111111111111",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [
+      "low_light_or_glare"
+    ],
+    "all_unusable": false,
+    "summary_text": "- img_1: brightness=118\n- img_2: brightness=141"
+  },
+  "confidence": 0.9,
+  "primary_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "img_1 clearly shows a large impact point and radiating crack lines on the windshield, satisfying the requirements for car glass inspection.",
+    "risk_flags": "low_light_or_glare",
+    "issue_type": "crack",
+    "object_part": "windshield",
+    "claim_status": "supported",
+    "claim_status_justification": "The image provides clear visual evidence of a crack/chip on the windshield as claimed by the user.",
+    "supporting_image_ids": "img_1",
+    "valid_image": true,
+    "severity": "medium"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "img_1 clearly shows a large impact point and radiating crack lines on the windshield, satisfying the requirements for car glass inspection.",
+    "risk_flags": "low_light_or_glare",
+    "issue_type": "crack",
+    "object_part": "windshield",
+    "claim_status": "supported",
+    "claim_status_justification": "The image provides clear visual evidence of a crack/chip on the windshield as claimed by the user.",
+    "supporting_image_ids": "img_1",
+    "valid_image": true,
+    "severity": "medium"
+  }
+}

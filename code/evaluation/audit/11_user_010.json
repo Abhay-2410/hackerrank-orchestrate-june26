@@ -1,0 +1,101 @@
+{
+  "user_id": "user_010",
+  "claim_object": "laptop",
+  "extracted_claim": {
+    "claimed_issue_types": [
+      "broken_part"
+    ],
+    "claimed_parts": [
+      "screen",
+      "hinge",
+      "port"
+    ],
+    "severity_claimed": "unknown",
+    "issue_families": [
+      "general claim review",
+      "screen, keyboard, or trackpad",
+      "hinge, lid, corner, body, or port",
+      "multi-image rows",
+      "reviewability",
+      "crack, broken, or missing part"
+    ],
+    "multi_image": true,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_GENERAL_MULTI_IMAGE",
+    "REQ_LAPTOP_SCREEN_KEYBOARD_TRACKPAD",
+    "REQ_LAPTOP_BODY_HINGE_PORT",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_010\\img_1.jpg",
+        "blur_score": 1901.6353891206413,
+        "is_blurry": false,
+        "brightness": 80.76737208147044,
+        "is_dark": false,
+        "is_glare": false,
+        "width": 275,
+        "height": 183,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.5027322404371584,
+        "is_extreme_crop": false,
+        "perceptual_hash": "1111000010110000100000001100000011110000111111001111100011110000",
+        "usable": true
+      },
+      {
+        "image_id": "img_2",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_010\\img_2.jpg",
+        "blur_score": 1911.3153553568836,
+        "is_blurry": false,
+        "brightness": 133.04072036442426,
+        "is_dark": false,
+        "is_glare": true,
+        "width": 678,
+        "height": 452,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.5,
+        "is_extreme_crop": false,
+        "perceptual_hash": "1111111111000011110000110100001101000111001001110011111100001111",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [
+      "low_light_or_glare"
+    ],
+    "all_unusable": false,
+    "summary_text": "- img_1: acceptable quality\n- img_2: brightness=133"
+  },
+  "confidence": 0.76,
+  "primary_output": {
+    "evidence_standard_met": false,
+    "evidence_standard_met_reason": "One image shows severe damage but appears to be from a different device/model than the second image, which is a generic stock-style photo of a clean laptop.",
+    "risk_flags": "possible_manipulation;low_light_or_glare",
+    "issue_type": "broken_part",
+    "object_part": "hinge",
+    "claim_status": "not_enough_information",
+    "claim_status_justification": "The images are contradictory. img_1 shows a severely broken hinge/bezel, but img_2 shows a completely intact, different laptop model. This suggests the evidence is not grounded in a single claimed object.",
+    "supporting_image_ids": "img_1",
+    "valid_image": false,
+    "severity": "high"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": false,
+    "evidence_standard_met_reason": "One image shows severe damage but appears to be from a different device/model than the second image, which is a generic stock-style photo of a clean laptop.",
+    "risk_flags": "possible_manipulation;low_light_or_glare",
+    "issue_type": "broken_part",
+    "object_part": "hinge",
+    "claim_status": "not_enough_information",
+    "claim_status_justification": "The images are contradictory. img_1 shows a severely broken hinge/bezel, but img_2 shows a completely intact, different laptop model. This suggests the evidence is not grounded in a single claimed object.",
+    "supporting_image_ids": "img_1",
+    "valid_image": false,
+    "severity": "high"
+  }
+}

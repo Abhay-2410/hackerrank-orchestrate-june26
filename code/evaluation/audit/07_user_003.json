@@ -1,0 +1,97 @@
+{
+  "user_id": "user_003",
+  "claim_object": "car",
+  "extracted_claim": {
+    "claimed_issue_types": [
+      "dent"
+    ],
+    "claimed_parts": [
+      "door",
+      "body"
+    ],
+    "severity_claimed": "unknown",
+    "issue_families": [
+      "general claim review",
+      "vehicle identity or orientation",
+      "multi-image rows",
+      "reviewability",
+      "dent or scratch"
+    ],
+    "multi_image": true,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_GENERAL_MULTI_IMAGE",
+    "REQ_CAR_BODY_PANEL",
+    "REQ_CAR_IDENTITY_OR_SIDE",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_007\\img_1.jpg",
+        "blur_score": 389.9378791210111,
+        "is_blurry": false,
+        "brightness": 113.7159505564678,
+        "is_dark": false,
+        "is_glare": false,
+        "width": 1740,
+        "height": 1386,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.2554112554112553,
+        "is_extreme_crop": false,
+        "perceptual_hash": "1100011111000111000000001111100000000001000000011111111111111111",
+        "usable": true
+      },
+      {
+        "image_id": "img_2",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_007\\img_2.jpg",
+        "blur_score": 724.6063552075234,
+        "is_blurry": false,
+        "brightness": 102.69096302744308,
+        "is_dark": false,
+        "is_glare": false,
+        "width": 730,
+        "height": 598,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.2207357859531773,
+        "is_extreme_crop": false,
+        "perceptual_hash": "1111101111111011000000111000001111000011000000110000000100000111",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [],
+    "all_unusable": false,
+    "summary_text": "- img_1: acceptable quality\n- img_2: acceptable quality"
+  },
+  "confidence": 0.94,
+  "primary_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "Image 2 provides a clear, close-up view of the door panel showing a distinct deformation consistent with a dent.",
+    "risk_flags": "blurry_image",
+    "issue_type": "dent",
+    "object_part": "door",
+    "claim_status": "supported",
+    "claim_status_justification": "The images show a visible dent on the driver-side door panel, supporting the customer's claim.",
+    "supporting_image_ids": "img_2",
+    "valid_image": true,
+    "severity": "medium"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "Image 2 provides a clear, close-up view of the door panel showing a distinct deformation consistent with a dent.",
+    "risk_flags": "blurry_image",
+    "issue_type": "dent",
+    "object_part": "door",
+    "claim_status": "supported",
+    "claim_status_justification": "The images show a visible dent on the driver-side door panel, supporting the customer's claim.",
+    "supporting_image_ids": "img_2",
+    "valid_image": true,
+    "severity": "medium"
+  }
+}

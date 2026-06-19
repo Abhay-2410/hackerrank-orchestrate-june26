@@ -1,0 +1,99 @@
+{
+  "user_id": "user_002",
+  "claim_object": "car",
+  "extracted_claim": {
+    "claimed_issue_types": [
+      "scratch"
+    ],
+    "claimed_parts": [
+      "front_bumper",
+      "body"
+    ],
+    "severity_claimed": "minor",
+    "issue_families": [
+      "general claim review",
+      "vehicle identity or orientation",
+      "multi-image rows",
+      "reviewability",
+      "dent or scratch"
+    ],
+    "multi_image": true,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_GENERAL_MULTI_IMAGE",
+    "REQ_CAR_BODY_PANEL",
+    "REQ_CAR_IDENTITY_OR_SIDE",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_002\\img_1.jpg",
+        "blur_score": 2596.615737616077,
+        "is_blurry": false,
+        "brightness": 123.79507203179334,
+        "is_dark": false,
+        "is_glare": false,
+        "width": 275,
+        "height": 183,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.5027322404371584,
+        "is_extreme_crop": false,
+        "perceptual_hash": "0011111100111111000000110000111000001111000011100000011000000000",
+        "usable": true
+      },
+      {
+        "image_id": "img_2",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_002\\img_2.jpg",
+        "blur_score": 4340.837158614266,
+        "is_blurry": false,
+        "brightness": 129.16388157894738,
+        "is_dark": false,
+        "is_glare": true,
+        "width": 500,
+        "height": 304,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.644736842105263,
+        "is_extreme_crop": false,
+        "perceptual_hash": "0000111000001010011111100111111101100110011111100000000000000000",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [
+      "low_light_or_glare"
+    ],
+    "all_unusable": false,
+    "summary_text": "- img_1: acceptable quality\n- img_2: brightness=129"
+  },
+  "confidence": 0.58,
+  "primary_output": {
+    "evidence_standard_met": false,
+    "evidence_standard_met_reason": "The images show two completely different vehicles. img_1 shows severe damage, while img_2 shows a pristine vehicle with no damage.",
+    "risk_flags": "wrong_object;possible_manipulation;low_light_or_glare",
+    "issue_type": "unknown",
+    "object_part": "front_bumper",
+    "claim_status": "contradicted",
+    "claim_status_justification": "The user claims a minor scratch on the front bumper. However, the images provided are inconsistent: img_1 shows a different car with severe structural damage (broken bumper/hole), while img_2 shows a high-end white car with no visible damage. Neither image supports a 'minor scratch' claim on a single consistent vehicle.",
+    "supporting_image_ids": "none",
+    "valid_image": false,
+    "severity": "unknown"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": false,
+    "evidence_standard_met_reason": "The images show two completely different vehicles. img_1 shows severe damage, while img_2 shows a pristine vehicle with no damage.",
+    "risk_flags": "wrong_object;possible_manipulation;low_light_or_glare",
+    "issue_type": "unknown",
+    "object_part": "front_bumper",
+    "claim_status": "contradicted",
+    "claim_status_justification": "The user claims a minor scratch on the front bumper. However, the images provided are inconsistent: img_1 shows a different car with severe structural damage (broken bumper/hole), while img_2 shows a high-end white car with no visible damage. Neither image supports a 'minor scratch' claim on a single consistent vehicle.",
+    "supporting_image_ids": "none",
+    "valid_image": false,
+    "severity": "unknown"
+  }
+}

@@ -1,0 +1,6 @@
+anthropic
+google-genai
+ollama
+pandas
+pillow
+python-dotenv

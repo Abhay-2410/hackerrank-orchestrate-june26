@@ -1,0 +1,84 @@
+{
+  "user_id": "user_031",
+  "claim_object": "package",
+  "extracted_claim": {
+    "claimed_issue_types": [
+      "water_damage",
+      "stain"
+    ],
+    "claimed_parts": [
+      "box",
+      "package_side",
+      "contents",
+      "item"
+    ],
+    "severity_claimed": "unknown",
+    "issue_families": [
+      "general claim review",
+      "crushed, torn, or seal damage",
+      "reviewability",
+      "water, stain, or label damage",
+      "contents or inner item"
+    ],
+    "multi_image": false,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_PACKAGE_EXTERIOR",
+    "REQ_PACKAGE_LABEL_OR_STAIN",
+    "REQ_PACKAGE_CONTENTS",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_017\\img_1.jpg",
+        "blur_score": 292.47105213132187,
+        "is_blurry": false,
+        "brightness": 79.28576412403292,
+        "is_dark": false,
+        "is_glare": false,
+        "width": 878,
+        "height": 999,
+        "is_low_resolution": false,
+        "aspect_ratio": 0.8788788788788788,
+        "is_extreme_crop": false,
+        "perceptual_hash": "0011111100111111000011110000011100000111000000110000011100001111",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [],
+    "all_unusable": false,
+    "summary_text": "- img_1: acceptable quality"
+  },
+  "confidence": 0.94,
+  "primary_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "The image clearly shows the exterior of the package side with a visible water stain/wet spot, meeting the requirements for assessing packaging surface damage.",
+    "risk_flags": "user_history_risk",
+    "issue_type": "water_damage",
+    "object_part": "package_side",
+    "claim_status": "supported",
+    "claim_status_justification": "The image shows a dark, saturated area on the cardboard consistent with water damage/staining, supporting the user's claim about the package surface looking wet/damaged.",
+    "supporting_image_ids": "img_1",
+    "valid_image": true,
+    "severity": "medium"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "The image clearly shows the exterior of the package side with a visible water stain/wet spot, meeting the requirements for assessing packaging surface damage.",
+    "risk_flags": "user_history_risk",
+    "issue_type": "water_damage",
+    "object_part": "package_side",
+    "claim_status": "supported",
+    "claim_status_justification": "The image shows a dark, saturated area on the cardboard consistent with water damage/staining, supporting the user's claim about the package surface looking wet/damaged.",
+    "supporting_image_ids": "img_1",
+    "valid_image": true,
+    "severity": "medium"
+  }
+}

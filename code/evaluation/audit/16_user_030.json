@@ -1,0 +1,102 @@
+{
+  "user_id": "user_030",
+  "claim_object": "package",
+  "extracted_claim": {
+    "claimed_issue_types": [
+      "broken_part",
+      "missing_part",
+      "torn_packaging"
+    ],
+    "claimed_parts": [
+      "box",
+      "package_side",
+      "seal",
+      "item"
+    ],
+    "severity_claimed": "unknown",
+    "issue_families": [
+      "general claim review",
+      "crushed, torn, or seal damage",
+      "multi-image rows",
+      "reviewability",
+      "crack, broken, or missing part",
+      "contents or inner item"
+    ],
+    "multi_image": true,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_GENERAL_MULTI_IMAGE",
+    "REQ_PACKAGE_EXTERIOR",
+    "REQ_PACKAGE_CONTENTS",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_016\\img_1.jpg",
+        "blur_score": 1388.0108519130692,
+        "is_blurry": false,
+        "brightness": 114.58475452196383,
+        "is_dark": false,
+        "is_glare": false,
+        "width": 645,
+        "height": 360,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.7916666666666667,
+        "is_extreme_crop": false,
+        "perceptual_hash": "1111111110000001100000011000000110000000110000001100001111000011",
+        "usable": true
+      },
+      {
+        "image_id": "img_2",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_016\\img_2.jpg",
+        "blur_score": 708.3593353566529,
+        "is_blurry": false,
+        "brightness": 178.32093106995885,
+        "is_dark": false,
+        "is_glare": false,
+        "width": 540,
+        "height": 360,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.5,
+        "is_extreme_crop": false,
+        "perceptual_hash": "1111111111110111110010011001000110000001100000111100011111111111",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [],
+    "all_unusable": false,
+    "summary_text": "- img_1: acceptable quality\n- img_2: acceptable quality"
+  },
+  "confidence": 0.97,
+  "primary_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "Image 1 clearly shows a large tear in the package side and seal area, directly supporting the user's claim of torn packaging.",
+    "risk_flags": "none",
+    "issue_type": "torn_packaging",
+    "object_part": "seal",
+    "claim_status": "supported",
+    "claim_status_justification": "The image provides clear visual evidence of the package being torn open at the seal/side, matching the user's description.",
+    "supporting_image_ids": "img_1",
+    "valid_image": true,
+    "severity": "medium"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "Image 1 clearly shows a large tear in the package side and seal area, directly supporting the user's claim of torn packaging.",
+    "risk_flags": "none",
+    "issue_type": "torn_packaging",
+    "object_part": "seal",
+    "claim_status": "supported",
+    "claim_status_justification": "The image provides clear visual evidence of the package being torn open at the seal/side, matching the user's description.",
+    "supporting_image_ids": "img_1",
+    "valid_image": true,
+    "severity": "medium"
+  }
+}
