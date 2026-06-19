@@ -1,17 +1,13 @@
 {
-  "user_id": "user_018",
+  "user_id": "user_009",
   "claim_object": "laptop",
   "extracted_claim": {
     "claimed_issue_types": [
-      "scratch",
-      "glass_shatter"
+      "crack"
     ],
     "claimed_parts": [
       "screen",
-      "keyboard",
-      "hinge",
-      "port",
-      "body"
+      "port"
     ],
     "severity_claimed": "unknown",
     "issue_families": [
@@ -19,7 +15,6 @@
       "screen, keyboard, or trackpad",
       "hinge, lid, corner, body, or port",
       "reviewability",
-      "dent or scratch",
       "crack, broken, or missing part"
     ],
     "multi_image": false,
@@ -36,18 +31,18 @@
     "images": [
       {
         "image_id": "img_1",
-        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_013\\img_1.jpg",
-        "blur_score": 821.9832499468974,
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_009\\img_1.jpg",
+        "blur_score": 3532.332959049973,
         "is_blurry": false,
-        "brightness": 49.35378333333333,
+        "brightness": 90.75894814814815,
         "is_dark": false,
         "is_glare": false,
-        "width": 1500,
-        "height": 1000,
+        "width": 900,
+        "height": 600,
         "is_low_resolution": false,
         "aspect_ratio": 1.5,
         "is_extreme_crop": false,
-        "perceptual_hash": "0000000000000011000000111000001110000011100000111000001110011111",
+        "perceptual_hash": "1000001110000000100000001000000010001111111111111111111111111100",
         "usable": true
       }
     ],
@@ -59,12 +54,12 @@
   "confidence": 1.0,
   "primary_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "img_1 clearly shows the MacBook Pro screen with extensive radial crack pattern emanating from a central impact point, fully sufficient to assess the claimed screen damage.",
+    "evidence_standard_met_reason": "img_1 is acceptable quality and clearly shows the laptop screen with extensive crack damage, fully satisfying REQ_GENERAL_OBJECT_PART and REQ_LAPTOP_SCREEN_KEYBOARD_TRACKPAD.",
     "risk_flags": "none",
-    "issue_type": "glass_shatter",
+    "issue_type": "crack",
     "object_part": "screen",
     "claim_status": "supported",
-    "claim_status_justification": "img_1 shows a MacBook Pro with a severely spider-webbed screen featuring a central impact point and radiating cracks extending across the full display \u2014 consistent with the user's claim of screen shatter from compression during travel.",
+    "claim_status_justification": "img_1 clearly shows a MacBook-style laptop with a severely cracked display glass featuring a central impact point and radiating crack lines across the entire screen, consistent with the user's claim of a drop-induced screen crack.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "high"
@@ -72,12 +67,12 @@
   "escalated": false,
   "final_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "img_1 clearly shows the MacBook Pro screen with extensive radial crack pattern emanating from a central impact point, fully sufficient to assess the claimed screen damage.",
+    "evidence_standard_met_reason": "img_1 is acceptable quality and clearly shows the laptop screen with extensive crack damage, fully satisfying REQ_GENERAL_OBJECT_PART and REQ_LAPTOP_SCREEN_KEYBOARD_TRACKPAD.",
     "risk_flags": "none",
-    "issue_type": "glass_shatter",
+    "issue_type": "crack",
     "object_part": "screen",
     "claim_status": "supported",
-    "claim_status_justification": "img_1 shows a MacBook Pro with a severely spider-webbed screen featuring a central impact point and radiating cracks extending across the full display \u2014 consistent with the user's claim of screen shatter from compression during travel.",
+    "claim_status_justification": "img_1 clearly shows a MacBook-style laptop with a severely cracked display glass featuring a central impact point and radiating crack lines across the entire screen, consistent with the user's claim of a drop-induced screen crack.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "high"

@@ -16,6 +16,7 @@ from evidence_checker import get_matched_requirement_ids, get_requirement
 from history_lookup import get_history
 from image_preflight import analyze_images
 from prompt_builder import ALLOWED_OBJECT_PARTS, build_prompt
+from output_calibrator import apply_output_calibrator
 from severity_engine import apply_severity_engine
 
 ANTHROPIC_MODEL = "claude-sonnet-4-6"
@@ -148,6 +149,18 @@ def _resolve_anthropic_config() -> tuple[str, str]:
     return "", ""
 
 
+def _post_process_output(
+    result: dict[str, Any],
+    claim_object: str,
+    extracted: Any,
+    preflight: Any,
+    user_claim: str,
+) -> dict[str, Any]:
+    """Apply severity engine and offline calibrator without extra API calls."""
+    refined = apply_severity_engine(result, claim_object, extracted, preflight)
+    return apply_output_calibrator(refined, claim_object, extracted, user_claim)
+
+
 def _resolve_image_path(relative_path: str) -> Path:
     if _dataset_base_path is None:
         raise RuntimeError("dataset base path not configured; call set_dataset_base_path first")
@@ -156,6 +169,9 @@ def _resolve_image_path(relative_path: str) -> Path:
 
 def _image_id_from_path(path: str) -> str:
     return Path(path.strip()).stem
+
+
+MAX_ANTHROPIC_B64_BYTES = 9_500_000  # Anthropic limit is 10_485_760 bytes for base64 payload
 
 
 def _encode_image_jpeg(image_path: Path) -> Optional[str]:
@@ -169,9 +185,16 @@ def _encode_image_jpeg(image_path: Path) -> Optional[str]:
 
         with Image.open(image_path) as img:
             rgb = img.convert("RGB")
-            buffer = io.BytesIO()
-            rgb.save(buffer, format="JPEG", quality=92)
-            return base64.standard_b64encode(buffer.getvalue()).decode("ascii")
+            for max_dim in (2048, 1600, 1280, 1024, 800):
+                working = rgb.copy()
+                working.thumbnail((max_dim, max_dim), Image.Resampling.LANCZOS)
+                for quality in (88, 75, 60, 45, 35):
+                    buffer = io.BytesIO()
+                    working.save(buffer, format="JPEG", quality=quality, optimize=True)
+                    encoded = base64.standard_b64encode(buffer.getvalue()).decode("ascii")
+                    if len(encoded) <= MAX_ANTHROPIC_B64_BYTES:
+                        return encoded
+        return None
     except Exception:
         return None
 
@@ -595,11 +618,12 @@ async def process_claim(
         reason = "Submitted image files were missing or unreadable."
         if missing_images:
             reason = f"Could not load submitted images: {', '.join(missing_images)}."
-        validated = apply_severity_engine(
+        validated = _post_process_output(
             _validate_model_output(_fallback_output(reason), claim_object),
             claim_object,
             extracted,
             preflight,
+            user_claim,
         )
         if collect_audit:
             audit["confidence"] = 0.0
@@ -610,7 +634,7 @@ async def process_claim(
 
     provider, api_key, model, host = _resolve_api_config()
     if not api_key:
-        validated = apply_severity_engine(
+        validated = _post_process_output(
             _validate_model_output(
                 _fallback_output(
                     "No API key configured. Set OLLAMA_API_KEY, GEMINI_API_KEY, or ANTHROPIC_API_KEY in .env."
@@ -620,6 +644,7 @@ async def process_claim(
             claim_object,
             extracted,
             preflight,
+            user_claim,
         )
         if collect_audit:
             audit["confidence"] = 0.0
@@ -646,7 +671,7 @@ async def process_claim(
             claim_object,
         )
 
-    validated = apply_severity_engine(validated, claim_object, extracted, preflight)
+    validated = _post_process_output(validated, claim_object, extracted, preflight, user_claim)
     confidence = compute_confidence(
         validated,
         extracted,
@@ -672,7 +697,7 @@ async def process_claim(
                 claim_object,
                 call_kind="verify",
             )
-            verified = apply_severity_engine(verified, claim_object, extracted, preflight)
+            verified = _post_process_output(verified, claim_object, extracted, preflight, user_claim)
             validated = verified
             escalated = True
             _usage_stats["escalations"] += 1

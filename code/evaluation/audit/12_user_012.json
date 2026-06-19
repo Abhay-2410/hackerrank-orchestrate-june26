@@ -71,30 +71,30 @@
     "all_unusable": false,
     "summary_text": "- img_1: brightness=155\n- img_2: acceptable quality"
   },
-  "confidence": 0.9,
+  "confidence": 0.93,
   "primary_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "The claimed object (laptop) is visible in img_1, and the claimed damage (dent) is clearly visible in the close-up img_2.",
+    "evidence_standard_met_reason": "img_2 clearly shows a dent/impact mark on the laptop lid corner; img_1 shows the undamaged reference state of the same Dell laptop model.",
     "risk_flags": "low_light_or_glare",
     "issue_type": "dent",
     "object_part": "corner",
     "claim_status": "supported",
-    "claim_status_justification": "Image 2 provides clear evidence of a dent on the laptop body/corner as described by the user.",
+    "claim_status_justification": "img_2 shows a visible impact dent/dimple on the upper corner of the laptop lid, consistent with the claimed drop from a chair onto the floor. Damage location and type match the claim.",
     "supporting_image_ids": "img_2",
     "valid_image": true,
-    "severity": "medium"
+    "severity": "low"
   },
   "escalated": false,
   "final_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "The claimed object (laptop) is visible in img_1, and the claimed damage (dent) is clearly visible in the close-up img_2.",
+    "evidence_standard_met_reason": "img_2 clearly shows a dent/impact mark on the laptop lid corner; img_1 shows the undamaged reference state of the same Dell laptop model.",
     "risk_flags": "low_light_or_glare",
     "issue_type": "dent",
     "object_part": "corner",
     "claim_status": "supported",
-    "claim_status_justification": "Image 2 provides clear evidence of a dent on the laptop body/corner as described by the user.",
+    "claim_status_justification": "img_2 shows a visible impact dent/dimple on the upper corner of the laptop lid, consistent with the claimed drop from a chair onto the floor. Damage location and type match the claim.",
     "supporting_image_ids": "img_2",
     "valid_image": true,
-    "severity": "medium"
+    "severity": "low"
   }
 }

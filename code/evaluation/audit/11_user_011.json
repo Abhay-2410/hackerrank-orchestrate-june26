@@ -56,12 +56,12 @@
   "confidence": 1.0,
   "primary_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "img_1 clearly shows the laptop keyboard area with visible water droplets and pooling liquid across keys and palm rest, directly supporting the claimed water/stain damage to the keyboard.",
+    "evidence_standard_met_reason": "img_1 clearly shows the laptop keyboard area with visible water droplets and liquid pooling across keys and palm rest, sufficient to assess the claimed damage.",
     "risk_flags": "none",
     "issue_type": "stain",
     "object_part": "keyboard",
     "claim_status": "supported",
-    "claim_status_justification": "img_1 shows extensive water coverage across the keyboard surface with visible liquid droplets on and between keys and on the surrounding palm rest area, consistent with the customer's reported water spill over the keys.",
+    "claim_status_justification": "img_1 shows extensive water/liquid coverage across the keyboard surface with visible droplets on keys and pooling on the palm rest, consistent with the user's claim of a water spill affecting the keyboard area.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "medium"
@@ -69,12 +69,12 @@
   "escalated": false,
   "final_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "img_1 clearly shows the laptop keyboard area with visible water droplets and pooling liquid across keys and palm rest, directly supporting the claimed water/stain damage to the keyboard.",
+    "evidence_standard_met_reason": "img_1 clearly shows the laptop keyboard area with visible water droplets and liquid pooling across keys and palm rest, sufficient to assess the claimed damage.",
     "risk_flags": "none",
     "issue_type": "stain",
     "object_part": "keyboard",
     "claim_status": "supported",
-    "claim_status_justification": "img_1 shows extensive water coverage across the keyboard surface with visible liquid droplets on and between keys and on the surrounding palm rest area, consistent with the customer's reported water spill over the keys.",
+    "claim_status_justification": "img_1 shows extensive water/liquid coverage across the keyboard surface with visible droplets on keys and pooling on the palm rest, consistent with the user's claim of a water spill affecting the keyboard area.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "medium"

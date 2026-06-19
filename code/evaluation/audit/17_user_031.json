@@ -55,15 +55,15 @@
     "all_unusable": false,
     "summary_text": "- img_1: acceptable quality"
   },
-  "confidence": 0.94,
+  "confidence": 0.91,
   "primary_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "The image clearly shows the exterior of the package side with a visible water stain/wet spot, meeting the requirements for assessing packaging surface damage.",
-    "risk_flags": "user_history_risk",
+    "evidence_standard_met_reason": "img_1 clearly shows the package exterior with visible dark wet staining and structural deformation on the box corner and side, sufficient to assess the claimed condition.",
+    "risk_flags": "user_history_risk;manual_review_required",
     "issue_type": "water_damage",
     "object_part": "package_side",
     "claim_status": "supported",
-    "claim_status_justification": "The image shows a dark, saturated area on the cardboard consistent with water damage/staining, supporting the user's claim about the package surface looking wet/damaged.",
+    "claim_status_justification": "img_1 shows a large dark wet-looking stain covering a significant portion of the package side and corner, consistent with water or liquid exposure during transit. The cardboard is also visibly softened and deformed from moisture.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "medium"
@@ -71,12 +71,12 @@
   "escalated": false,
   "final_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "The image clearly shows the exterior of the package side with a visible water stain/wet spot, meeting the requirements for assessing packaging surface damage.",
-    "risk_flags": "user_history_risk",
+    "evidence_standard_met_reason": "img_1 clearly shows the package exterior with visible dark wet staining and structural deformation on the box corner and side, sufficient to assess the claimed condition.",
+    "risk_flags": "user_history_risk;manual_review_required",
     "issue_type": "water_damage",
     "object_part": "package_side",
     "claim_status": "supported",
-    "claim_status_justification": "The image shows a dark, saturated area on the cardboard consistent with water damage/staining, supporting the user's claim about the package surface looking wet/damaged.",
+    "claim_status_justification": "img_1 shows a large dark wet-looking stain covering a significant portion of the package side and corner, consistent with water or liquid exposure during transit. The cardboard is also visibly softened and deformed from moisture.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "medium"

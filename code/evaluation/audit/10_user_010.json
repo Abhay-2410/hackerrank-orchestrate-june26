@@ -75,12 +75,12 @@
   "confidence": 0.93,
   "primary_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "img_1 clearly shows physical breakage at the hinge/lid junction area of a laptop, satisfying REQ_LAPTOP_BODY_HINGE_PORT and REQ_GENERAL_OBJECT_PART. img_2 shows the full laptop for context.",
+    "evidence_standard_met_reason": "img_1 clearly shows the hinge/lid area of a laptop with visible physical breakage and separation of the screen bezel from the body, sufficient to evaluate the claimed hinge damage.",
     "risk_flags": "low_light_or_glare",
     "issue_type": "broken_part",
     "object_part": "hinge",
     "claim_status": "supported",
-    "claim_status_justification": "img_1 shows visible physical breakage and separation at the hinge/lid area of the laptop, consistent with the user's claim of a broken hinge causing the screen to wobble after a drop.",
+    "claim_status_justification": "img_1 shows clear physical breakage at the hinge/lid junction of the laptop \u2014 the screen bezel is cracked and separated from the body, consistent with the user's claim of a broken hinge area after a drop from a sofa.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "medium"
@@ -88,12 +88,12 @@
   "escalated": false,
   "final_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "img_1 clearly shows physical breakage at the hinge/lid junction area of a laptop, satisfying REQ_LAPTOP_BODY_HINGE_PORT and REQ_GENERAL_OBJECT_PART. img_2 shows the full laptop for context.",
+    "evidence_standard_met_reason": "img_1 clearly shows the hinge/lid area of a laptop with visible physical breakage and separation of the screen bezel from the body, sufficient to evaluate the claimed hinge damage.",
     "risk_flags": "low_light_or_glare",
     "issue_type": "broken_part",
     "object_part": "hinge",
     "claim_status": "supported",
-    "claim_status_justification": "img_1 shows visible physical breakage and separation at the hinge/lid area of the laptop, consistent with the user's claim of a broken hinge causing the screen to wobble after a drop.",
+    "claim_status_justification": "img_1 shows clear physical breakage at the hinge/lid junction of the laptop \u2014 the screen bezel is cracked and separated from the body, consistent with the user's claim of a broken hinge area after a drop from a sofa.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "medium"

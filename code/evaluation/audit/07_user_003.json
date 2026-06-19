@@ -68,15 +68,15 @@
     "all_unusable": false,
     "summary_text": "- img_1: acceptable quality\n- img_2: acceptable quality"
   },
-  "confidence": 0.94,
+  "confidence": 0.97,
   "primary_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "Image 2 provides a clear, close-up view of the door panel showing a distinct deformation consistent with a dent.",
+    "evidence_standard_met_reason": "img_2 clearly shows the door panel area of a dark vehicle with visible surface deformation/dent; img_1 provides wide-angle context of the same vehicle type though blurry.",
     "risk_flags": "blurry_image",
     "issue_type": "dent",
     "object_part": "door",
     "claim_status": "supported",
-    "claim_status_justification": "The images show a visible dent on the driver-side door panel, supporting the customer's claim.",
+    "claim_status_justification": "img_2 clearly shows a visible dent/deformation on the door panel of a dark-colored vehicle, consistent with the customer's claim of a dent along the side door panel area.",
     "supporting_image_ids": "img_2",
     "valid_image": true,
     "severity": "medium"
@@ -84,12 +84,12 @@
   "escalated": false,
   "final_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "Image 2 provides a clear, close-up view of the door panel showing a distinct deformation consistent with a dent.",
+    "evidence_standard_met_reason": "img_2 clearly shows the door panel area of a dark vehicle with visible surface deformation/dent; img_1 provides wide-angle context of the same vehicle type though blurry.",
     "risk_flags": "blurry_image",
     "issue_type": "dent",
     "object_part": "door",
     "claim_status": "supported",
-    "claim_status_justification": "The images show a visible dent on the driver-side door panel, supporting the customer's claim.",
+    "claim_status_justification": "img_2 clearly shows a visible dent/deformation on the door panel of a dark-colored vehicle, consistent with the customer's claim of a dent along the side door panel area.",
     "supporting_image_ids": "img_2",
     "valid_image": true,
     "severity": "medium"

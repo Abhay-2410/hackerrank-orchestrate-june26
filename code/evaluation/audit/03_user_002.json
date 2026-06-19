@@ -1,0 +1,102 @@
+{
+  "user_id": "user_002",
+  "claim_object": "car",
+  "extracted_claim": {
+    "claimed_issue_types": [
+      "scratch",
+      "broken_part"
+    ],
+    "claimed_parts": [
+      "front_bumper",
+      "body"
+    ],
+    "severity_claimed": "minor",
+    "issue_families": [
+      "general claim review",
+      "vehicle identity or orientation",
+      "multi-image rows",
+      "reviewability",
+      "dent or scratch",
+      "crack, broken, or missing part"
+    ],
+    "multi_image": true,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_GENERAL_MULTI_IMAGE",
+    "REQ_CAR_BODY_PANEL",
+    "REQ_CAR_GLASS_LIGHT_MIRROR",
+    "REQ_CAR_IDENTITY_OR_SIDE",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_002\\img_1.jpg",
+        "blur_score": 2596.615737616077,
+        "is_blurry": false,
+        "brightness": 123.79507203179334,
+        "is_dark": false,
+        "is_glare": false,
+        "width": 275,
+        "height": 183,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.5027322404371584,
+        "is_extreme_crop": false,
+        "perceptual_hash": "0011111100111111000000110000111000001111000011100000011000000000",
+        "usable": true
+      },
+      {
+        "image_id": "img_2",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_002\\img_2.jpg",
+        "blur_score": 4340.837158614266,
+        "is_blurry": false,
+        "brightness": 129.16388157894738,
+        "is_dark": false,
+        "is_glare": true,
+        "width": 500,
+        "height": 304,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.644736842105263,
+        "is_extreme_crop": false,
+        "perceptual_hash": "0000111000001010011111100111111101100110011111100000000000000000",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [
+      "low_light_or_glare"
+    ],
+    "all_unusable": false,
+    "summary_text": "- img_1: acceptable quality\n- img_2: brightness=129"
+  },
+  "confidence": 0.55,
+  "primary_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "img_1 clearly shows front bumper area with visible damage; img_2 shows an undamaged vehicle front for comparison. Both images are readable and assessable.",
+    "risk_flags": "wrong_object;non_original_image;manual_review_required;low_light_or_glare",
+    "issue_type": "broken_part",
+    "object_part": "front_bumper",
+    "claim_status": "not_enough_information",
+    "claim_status_justification": "img_1 shows a white car with significant front bumper damage (crumpled/broken bumper fascia, not merely a scratch), but img_2 shows a different undamaged Jaguar XF \u2014 the two images depict different vehicles. Cannot confirm both images belong to the same claimed vehicle, preventing a definitive supported determination.",
+    "supporting_image_ids": "img_1",
+    "valid_image": true,
+    "severity": "unknown"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "img_1 clearly shows front bumper area with visible damage; img_2 shows an undamaged vehicle front for comparison. Both images are readable and assessable.",
+    "risk_flags": "wrong_object;non_original_image;manual_review_required;low_light_or_glare",
+    "issue_type": "broken_part",
+    "object_part": "front_bumper",
+    "claim_status": "not_enough_information",
+    "claim_status_justification": "img_1 shows a white car with significant front bumper damage (crumpled/broken bumper fascia, not merely a scratch), but img_2 shows a different undamaged Jaguar XF \u2014 the two images depict different vehicles. Cannot confirm both images belong to the same claimed vehicle, preventing a definitive supported determination.",
+    "supporting_image_ids": "img_1",
+    "valid_image": true,
+    "severity": "unknown"
+  }
+}

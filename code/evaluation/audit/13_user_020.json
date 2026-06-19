@@ -1,0 +1,79 @@
+{
+  "user_id": "user_020",
+  "claim_object": "laptop",
+  "extracted_claim": {
+    "claimed_issue_types": [],
+    "claimed_parts": [
+      "trackpad",
+      "port"
+    ],
+    "severity_claimed": "unknown",
+    "issue_families": [
+      "general claim review",
+      "screen, keyboard, or trackpad",
+      "hinge, lid, corner, body, or port",
+      "reviewability"
+    ],
+    "multi_image": false,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_LAPTOP_SCREEN_KEYBOARD_TRACKPAD",
+    "REQ_LAPTOP_BODY_HINGE_PORT",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_014\\img_1.jpg",
+        "blur_score": 564.1566964360449,
+        "is_blurry": false,
+        "brightness": 139.95445852872217,
+        "is_dark": false,
+        "is_glare": true,
+        "width": 640,
+        "height": 853,
+        "is_low_resolution": false,
+        "aspect_ratio": 0.7502930832356389,
+        "is_extreme_crop": false,
+        "perceptual_hash": "0000000000000000000000000000100000110100000111110001111111111111",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [
+      "low_light_or_glare"
+    ],
+    "all_unusable": false,
+    "summary_text": "- img_1: brightness=140"
+  },
+  "confidence": 0.81,
+  "primary_output": {
+    "evidence_standard_met": false,
+    "evidence_standard_met_reason": "Image shows the laptop palm rest and front edge area with a drawn circle annotation, but no clear physical damage (crack, dent, deformation) is visible on the trackpad or body. The circled area appears undamaged under inspection.",
+    "risk_flags": "low_light_or_glare;damage_not_visible;user_history_risk;manual_review_required",
+    "issue_type": "none",
+    "object_part": "trackpad",
+    "claim_status": "contradicted",
+    "claim_status_justification": "The image shows the laptop palm rest and front edge near the trackpad. Despite the drawn circle highlighting the area, no visible physical damage such as cracks, dents, or deformation is apparent. The surface appears intact.",
+    "supporting_image_ids": "none",
+    "valid_image": true,
+    "severity": "none"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": false,
+    "evidence_standard_met_reason": "Image shows the laptop palm rest and front edge area with a drawn circle annotation, but no clear physical damage (crack, dent, deformation) is visible on the trackpad or body. The circled area appears undamaged under inspection.",
+    "risk_flags": "low_light_or_glare;damage_not_visible;user_history_risk;manual_review_required",
+    "issue_type": "none",
+    "object_part": "trackpad",
+    "claim_status": "contradicted",
+    "claim_status_justification": "The image shows the laptop palm rest and front edge near the trackpad. Despite the drawn circle highlighting the area, no visible physical damage such as cracks, dents, or deformation is apparent. The surface appears intact.",
+    "supporting_image_ids": "none",
+    "valid_image": true,
+    "severity": "none"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "user_id": "user_008",
+  "claim_object": "car",
+  "extracted_claim": {
+    "claimed_issue_types": [
+      "scratch"
+    ],
+    "claimed_parts": [
+      "hood",
+      "body"
+    ],
+    "severity_claimed": "unknown",
+    "issue_families": [
+      "general claim review",
+      "vehicle identity or orientation",
+      "reviewability",
+      "dent or scratch"
+    ],
+    "multi_image": false,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_CAR_BODY_PANEL",
+    "REQ_CAR_IDENTITY_OR_SIDE",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_008\\img_1.jpg",
+        "blur_score": 1315.9498526998323,
+        "is_blurry": false,
+        "brightness": 38.02841316118284,
+        "is_dark": true,
+        "is_glare": false,
+        "width": 1470,
+        "height": 980,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.5,
+        "is_extreme_crop": false,
+        "perceptual_hash": "0011111011111110011111101001011000111100000000000000000000000000",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [
+      "low_light_or_glare"
+    ],
+    "all_unusable": false,
+    "summary_text": "- img_1: brightness=38"
+  },
+  "confidence": 0.72,
+  "primary_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "Image is clear enough to assess the vehicle's front-end condition despite low brightness; damage is unambiguously visible.",
+    "risk_flags": "low_light_or_glare;claim_mismatch;non_original_image;user_history_risk;manual_review_required",
+    "issue_type": "broken_part",
+    "object_part": "hood",
+    "claim_status": "contradicted",
+    "claim_status_justification": "Customer claims a scratch on the hood from a service visit. Image shows catastrophic front-end destruction: hood torn open, fenders shredded, engine bay fully exposed, structural frame damage. This is far beyond a scratch and inconsistent with a post-service mark. Damage pattern suggests a severe collision, not a service-related scratch.",
+    "supporting_image_ids": "img_1",
+    "valid_image": false,
+    "severity": "high"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "Image is clear enough to assess the vehicle's front-end condition despite low brightness; damage is unambiguously visible.",
+    "risk_flags": "low_light_or_glare;claim_mismatch;non_original_image;user_history_risk;manual_review_required",
+    "issue_type": "broken_part",
+    "object_part": "hood",
+    "claim_status": "contradicted",
+    "claim_status_justification": "Customer claims a scratch on the hood from a service visit. Image shows catastrophic front-end destruction: hood torn open, fenders shredded, engine bay fully exposed, structural frame damage. This is far beyond a scratch and inconsistent with a post-service mark. Damage pattern suggests a severe collision, not a service-related scratch.",
+    "supporting_image_ids": "img_1",
+    "valid_image": false,
+    "severity": "high"
+  }
+}

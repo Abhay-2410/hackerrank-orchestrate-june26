@@ -72,15 +72,15 @@
     "all_unusable": false,
     "summary_text": "- img_1: acceptable quality\n- img_2: acceptable quality"
   },
-  "confidence": 0.88,
+  "confidence": 0.91,
   "primary_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "img_1 clearly shows the claimed torn seal and opened package exterior.",
+    "evidence_standard_met_reason": "Both images are clear and show package exteriors with sufficient detail to evaluate the claimed torn seal and packaging damage.",
     "risk_flags": "text_instruction_present;user_history_risk",
     "issue_type": "torn_packaging",
     "object_part": "seal",
     "claim_status": "supported",
-    "claim_status_justification": "img_1 shows a clearly torn tamper-evident seal and a gap in the box flap, supporting the user's claim that the package arrived opened.",
+    "claim_status_justification": "img_1 clearly shows a box with tamper-evident tape that has been torn open, with cardboard visibly ripped and the seal broken. The damage is consistent with the customer's claim of a torn-open package. img_2 shows intact security seal tape for contrast. Primary evidence from img_1 supports the claim.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "medium"
@@ -88,12 +88,12 @@
   "escalated": false,
   "final_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "img_1 clearly shows the claimed torn seal and opened package exterior.",
+    "evidence_standard_met_reason": "Both images are clear and show package exteriors with sufficient detail to evaluate the claimed torn seal and packaging damage.",
     "risk_flags": "text_instruction_present;user_history_risk",
     "issue_type": "torn_packaging",
     "object_part": "seal",
     "claim_status": "supported",
-    "claim_status_justification": "img_1 shows a clearly torn tamper-evident seal and a gap in the box flap, supporting the user's claim that the package arrived opened.",
+    "claim_status_justification": "img_1 clearly shows a box with tamper-evident tape that has been torn open, with cardboard visibly ripped and the seal broken. The damage is consistent with the customer's claim of a torn-open package. img_2 shows intact security seal tape for contrast. Primary evidence from img_1 supports the claim.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "medium"

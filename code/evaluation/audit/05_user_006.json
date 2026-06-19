@@ -1,0 +1,78 @@
+{
+  "user_id": "user_006",
+  "claim_object": "car",
+  "extracted_claim": {
+    "claimed_issue_types": [
+      "crack"
+    ],
+    "claimed_parts": [
+      "headlight"
+    ],
+    "severity_claimed": "minor",
+    "issue_families": [
+      "general claim review",
+      "vehicle identity or orientation",
+      "reviewability",
+      "crack, broken, or missing part"
+    ],
+    "multi_image": false,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_CAR_GLASS_LIGHT_MIRROR",
+    "REQ_CAR_IDENTITY_OR_SIDE",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_006\\img_1.jpg",
+        "blur_score": 2309.070483305399,
+        "is_blurry": false,
+        "brightness": 118.9322125,
+        "is_dark": false,
+        "is_glare": false,
+        "width": 600,
+        "height": 400,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.5,
+        "is_extreme_crop": false,
+        "perceptual_hash": "0111111101111111001111110001111100111100011110000101000011000000",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [],
+    "all_unusable": false,
+    "summary_text": "- img_1: acceptable quality"
+  },
+  "confidence": 0.66,
+  "primary_output": {
+    "evidence_standard_met": false,
+    "evidence_standard_met_reason": "img_1 shows the side and front-right area of a dark car on a road at sunset, but the headlight is not visible or inspectable \u2014 the image does not show the front headlight unit at any usable angle.",
+    "risk_flags": "wrong_angle;damage_not_visible",
+    "issue_type": "unknown",
+    "object_part": "headlight",
+    "claim_status": "not_enough_information",
+    "claim_status_justification": "The single submitted image shows the right side and partial front of the vehicle from a low rear-side angle. The headlight is not visible or close enough to inspect for any crack or damage. Claimed part cannot be evaluated.",
+    "supporting_image_ids": "none",
+    "valid_image": true,
+    "severity": "unknown"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": false,
+    "evidence_standard_met_reason": "img_1 shows the side and front-right area of a dark car on a road at sunset, but the headlight is not visible or inspectable \u2014 the image does not show the front headlight unit at any usable angle.",
+    "risk_flags": "wrong_angle;damage_not_visible",
+    "issue_type": "unknown",
+    "object_part": "headlight",
+    "claim_status": "not_enough_information",
+    "claim_status_justification": "The single submitted image shows the right side and partial front of the vehicle from a low rear-side angle. The headlight is not visible or close enough to inspect for any crack or damage. Claimed part cannot be evaluated.",
+    "supporting_image_ids": "none",
+    "valid_image": true,
+    "severity": "unknown"
+  }
+}

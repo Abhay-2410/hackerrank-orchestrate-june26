@@ -53,15 +53,15 @@
     "all_unusable": false,
     "summary_text": "- img_1: acceptable quality"
   },
-  "confidence": 0.97,
+  "confidence": 1.0,
   "primary_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "The image clearly shows the package exterior and the specific corner that is crushed, satisfying the general object and packaging exterior requirements.",
+    "evidence_standard_met_reason": "img_1 is acceptable quality and clearly shows the package corner and top edge, sufficient to assess the claimed crush damage.",
     "risk_flags": "none",
     "issue_type": "crushed_packaging",
     "object_part": "package_corner",
     "claim_status": "supported",
-    "claim_status_justification": "The image provides clear visual evidence of a crushed corner on the delivery box, which matches the customer's claim.",
+    "claim_status_justification": "img_1 clearly shows the top corner of the box with visible inward deformation and creasing of the cardboard, consistent with the claimed crushed corner damage.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "medium"
@@ -69,12 +69,12 @@
   "escalated": false,
   "final_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "The image clearly shows the package exterior and the specific corner that is crushed, satisfying the general object and packaging exterior requirements.",
+    "evidence_standard_met_reason": "img_1 is acceptable quality and clearly shows the package corner and top edge, sufficient to assess the claimed crush damage.",
     "risk_flags": "none",
     "issue_type": "crushed_packaging",
     "object_part": "package_corner",
     "claim_status": "supported",
-    "claim_status_justification": "The image provides clear visual evidence of a crushed corner on the delivery box, which matches the customer's claim.",
+    "claim_status_justification": "img_1 clearly shows the top corner of the box with visible inward deformation and creasing of the cardboard, consistent with the claimed crushed corner damage.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "medium"

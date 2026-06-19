@@ -1,0 +1,95 @@
+{
+  "user_id": "user_005",
+  "claim_object": "car",
+  "extracted_claim": {
+    "claimed_issue_types": [],
+    "claimed_parts": [
+      "rear_bumper"
+    ],
+    "severity_claimed": "major",
+    "issue_families": [
+      "general claim review",
+      "vehicle identity or orientation",
+      "multi-image rows",
+      "reviewability"
+    ],
+    "multi_image": true,
+    "injection_detected": false,
+    "language_hint": "en"
+  },
+  "matched_requirement_ids": [
+    "REQ_GENERAL_OBJECT_PART",
+    "REQ_GENERAL_MULTI_IMAGE",
+    "REQ_CAR_IDENTITY_OR_SIDE",
+    "REQ_REVIEW_TRUST"
+  ],
+  "preflight": {
+    "images": [
+      {
+        "image_id": "img_1",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_005\\img_1.jpg",
+        "blur_score": 969.3632971874605,
+        "is_blurry": false,
+        "brightness": 165.2242577008574,
+        "is_dark": false,
+        "is_glare": true,
+        "width": 376,
+        "height": 134,
+        "is_low_resolution": true,
+        "aspect_ratio": 2.8059701492537314,
+        "is_extreme_crop": false,
+        "perceptual_hash": "0011111100011111000111111001111100011111000111110001111100001110",
+        "usable": true
+      },
+      {
+        "image_id": "img_2",
+        "path": "C:\\Users\\Admin\\hackerrank-orchestrate-june26\\dataset\\images\\sample\\case_005\\img_2.jpg",
+        "blur_score": 1930.2005486332696,
+        "is_blurry": false,
+        "brightness": 125.59730484946819,
+        "is_dark": false,
+        "is_glare": false,
+        "width": 516,
+        "height": 387,
+        "is_low_resolution": false,
+        "aspect_ratio": 1.3333333333333333,
+        "is_extreme_crop": false,
+        "perceptual_hash": "1111111110111111111111110111111101111111000000010000000100000000",
+        "usable": true
+      }
+    ],
+    "duplicate_groups": [],
+    "suggested_risk_flags": [
+      "cropped_or_obstructed",
+      "low_light_or_glare"
+    ],
+    "all_unusable": false,
+    "summary_text": "- img_1: brightness=165, size=376x134\n- img_2: acceptable quality"
+  },
+  "confidence": 0.6,
+  "primary_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "img_2 clearly shows the rear bumper area of a silver hatchback with no visible deformation; img_1 shows a dent on a white vehicle's quarter panel/fender area, not the rear bumper.",
+    "risk_flags": "cropped_or_obstructed;low_light_or_glare;wrong_object_part;claim_mismatch;user_history_risk;manual_review_required",
+    "issue_type": "dent",
+    "object_part": "quarter_panel",
+    "claim_status": "contradicted",
+    "claim_status_justification": "img_2 shows the claimed rear bumper with no visible damage or deformation. img_1 shows a dent but on a quarter panel/fender of a different white vehicle, not the rear bumper. Neither image supports a rear bumper dent claim.",
+    "supporting_image_ids": "img_1;img_2",
+    "valid_image": true,
+    "severity": "low"
+  },
+  "escalated": false,
+  "final_output": {
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "img_2 clearly shows the rear bumper area of a silver hatchback with no visible deformation; img_1 shows a dent on a white vehicle's quarter panel/fender area, not the rear bumper.",
+    "risk_flags": "cropped_or_obstructed;low_light_or_glare;wrong_object_part;claim_mismatch;user_history_risk;manual_review_required",
+    "issue_type": "dent",
+    "object_part": "quarter_panel",
+    "claim_status": "contradicted",
+    "claim_status_justification": "img_2 shows the claimed rear bumper with no visible damage or deformation. img_1 shows a dent but on a quarter panel/fender of a different white vehicle, not the rear bumper. Neither image supports a rear bumper dent claim.",
+    "supporting_image_ids": "img_1;img_2",
+    "valid_image": true,
+    "severity": "low"
+  }
+}

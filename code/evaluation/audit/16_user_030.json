@@ -73,15 +73,15 @@
     "all_unusable": false,
     "summary_text": "- img_1: acceptable quality\n- img_2: acceptable quality"
   },
-  "confidence": 0.97,
+  "confidence": 1.0,
   "primary_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "Image 1 clearly shows a large tear in the package side and seal area, directly supporting the user's claim of torn packaging.",
+    "evidence_standard_met_reason": "img_1 clearly shows the package exterior with severe tearing on the package side/seal area; img_2 shows an undamaged reference box. Both images are acceptable quality and sufficient to evaluate the claim.",
     "risk_flags": "none",
     "issue_type": "torn_packaging",
-    "object_part": "seal",
+    "object_part": "package_side",
     "claim_status": "supported",
-    "claim_status_justification": "The image provides clear visual evidence of the package being torn open at the seal/side, matching the user's description.",
+    "claim_status_justification": "img_1 shows extensive tearing and rupture along the package side/seal area consistent with the customer's claim that the parcel appeared opened or torn. img_2 appears to be a reference/stock image of an intact box, which does not contradict the claim.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "medium"
@@ -89,12 +89,12 @@
   "escalated": false,
   "final_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "Image 1 clearly shows a large tear in the package side and seal area, directly supporting the user's claim of torn packaging.",
+    "evidence_standard_met_reason": "img_1 clearly shows the package exterior with severe tearing on the package side/seal area; img_2 shows an undamaged reference box. Both images are acceptable quality and sufficient to evaluate the claim.",
     "risk_flags": "none",
     "issue_type": "torn_packaging",
-    "object_part": "seal",
+    "object_part": "package_side",
     "claim_status": "supported",
-    "claim_status_justification": "The image provides clear visual evidence of the package being torn open at the seal/side, matching the user's description.",
+    "claim_status_justification": "img_1 shows extensive tearing and rupture along the package side/seal area consistent with the customer's claim that the parcel appeared opened or torn. img_2 appears to be a reference/stock image of an intact box, which does not contradict the claim.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "medium"

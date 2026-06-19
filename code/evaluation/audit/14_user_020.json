@@ -50,30 +50,30 @@
     "all_unusable": false,
     "summary_text": "- img_1: brightness=140"
   },
-  "confidence": 0.84,
+  "confidence": 0.85,
   "primary_output": {
-    "evidence_standard_met": false,
-    "evidence_standard_met_reason": "The image shows the trackpad area, but there is no visible physical damage, crack, or deformation despite the user's claim of physical damage from hitting a desk edge.",
-    "risk_flags": "damage_not_visible;user_history_risk;low_light_or_glare",
-    "issue_type": "none",
-    "object_part": "trackpad",
-    "claim_status": "contradicted",
-    "claim_status_justification": "The user claims physical damage to the trackpad area, but the provided image shows a trackpad in good physical condition with no visible damage inside the highlighted area.",
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "Image is sufficiently clear to inspect the front-left corner and palm rest area of the laptop near the trackpad.",
+    "risk_flags": "low_light_or_glare;user_history_risk",
+    "issue_type": "scratch",
+    "object_part": "corner",
+    "claim_status": "supported",
+    "claim_status_justification": "Image shows visible surface scratches/scuff marks on the front-left corner of the laptop body near the trackpad area, consistent with the claimed impact against a desk edge. Damage is minor but present.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
-    "severity": "none"
+    "severity": "low"
   },
   "escalated": false,
   "final_output": {
-    "evidence_standard_met": false,
-    "evidence_standard_met_reason": "The image shows the trackpad area, but there is no visible physical damage, crack, or deformation despite the user's claim of physical damage from hitting a desk edge.",
-    "risk_flags": "damage_not_visible;user_history_risk;low_light_or_glare",
-    "issue_type": "none",
-    "object_part": "trackpad",
-    "claim_status": "contradicted",
-    "claim_status_justification": "The user claims physical damage to the trackpad area, but the provided image shows a trackpad in good physical condition with no visible damage inside the highlighted area.",
+    "evidence_standard_met": true,
+    "evidence_standard_met_reason": "Image is sufficiently clear to inspect the front-left corner and palm rest area of the laptop near the trackpad.",
+    "risk_flags": "low_light_or_glare;user_history_risk",
+    "issue_type": "scratch",
+    "object_part": "corner",
+    "claim_status": "supported",
+    "claim_status_justification": "Image shows visible surface scratches/scuff marks on the front-left corner of the laptop body near the trackpad area, consistent with the claimed impact against a desk edge. Damage is minor but present.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
-    "severity": "none"
+    "severity": "low"
   }
 }

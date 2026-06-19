@@ -3,8 +3,7 @@
   "claim_object": "car",
   "extracted_claim": {
     "claimed_issue_types": [
-      "dent",
-      "missing_part"
+      "dent"
     ],
     "claimed_parts": [
       "rear_bumper",
@@ -15,8 +14,7 @@
       "general claim review",
       "vehicle identity or orientation",
       "reviewability",
-      "dent or scratch",
-      "contents or inner item"
+      "dent or scratch"
     ],
     "multi_image": false,
     "injection_detected": false,
@@ -54,30 +52,30 @@
     "all_unusable": false,
     "summary_text": "- img_1: brightness=142"
   },
-  "confidence": 0.9,
+  "confidence": 0.93,
   "primary_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "The image clearly shows the rear of the vehicle with significant deformation to the bumper and trunk area, satisfying the requirements for panel assessment and vehicle orientation.",
+    "evidence_standard_met_reason": "img_1 clearly shows the rear of the vehicle with visible bumper deformation and body damage, sufficient to assess the claimed condition.",
     "risk_flags": "low_light_or_glare",
     "issue_type": "dent",
     "object_part": "rear_bumper",
     "claim_status": "supported",
-    "claim_status_justification": "The image shows severe deformation and crushing of the rear bumper and body panels, directly supporting the user's claim of a dent/damage to the rear bumper area.",
+    "claim_status_justification": "img_1 shows significant deformation of the rear bumper area including a missing/detached bumper cover and crumpled trunk lid/body panel, consistent with the user's claim of rear bumper dent damage.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
-    "severity": "high"
+    "severity": "medium"
   },
   "escalated": false,
   "final_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "The image clearly shows the rear of the vehicle with significant deformation to the bumper and trunk area, satisfying the requirements for panel assessment and vehicle orientation.",
+    "evidence_standard_met_reason": "img_1 clearly shows the rear of the vehicle with visible bumper deformation and body damage, sufficient to assess the claimed condition.",
     "risk_flags": "low_light_or_glare",
     "issue_type": "dent",
     "object_part": "rear_bumper",
     "claim_status": "supported",
-    "claim_status_justification": "The image shows severe deformation and crushing of the rear bumper and body panels, directly supporting the user's claim of a dent/damage to the rear bumper area.",
+    "claim_status_justification": "img_1 shows significant deformation of the rear bumper area including a missing/detached bumper cover and crumpled trunk lid/body panel, consistent with the user's claim of rear bumper dent damage.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
-    "severity": "high"
+    "severity": "medium"
   }
 }

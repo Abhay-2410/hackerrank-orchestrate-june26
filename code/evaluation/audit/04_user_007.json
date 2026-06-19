@@ -49,15 +49,15 @@
     "all_unusable": false,
     "summary_text": "- img_1: brightness=125, size=356x141"
   },
-  "confidence": 0.83,
+  "confidence": 0.86,
   "primary_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "The image clearly shows the claimed object (car) and part (side mirror) with visible damage.",
+    "evidence_standard_met_reason": "Image is small but sufficiently clear to identify a cracked/shattered side mirror glass on a red vehicle, matching the claimed part and damage type.",
     "risk_flags": "cropped_or_obstructed;low_light_or_glare",
     "issue_type": "broken_part",
     "object_part": "side_mirror",
     "claim_status": "supported",
-    "claim_status_justification": "The image shows the side mirror glass is shattered/broken, supporting the user's claim that the mirror was damaged.",
+    "claim_status_justification": "img_1 clearly shows a red car's side mirror with extensively cracked/broken mirror glass, consistent with the customer's claim that the side mirror was damaged by a passing vehicle while parked.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "medium"
@@ -65,12 +65,12 @@
   "escalated": false,
   "final_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "The image clearly shows the claimed object (car) and part (side mirror) with visible damage.",
+    "evidence_standard_met_reason": "Image is small but sufficiently clear to identify a cracked/shattered side mirror glass on a red vehicle, matching the claimed part and damage type.",
     "risk_flags": "cropped_or_obstructed;low_light_or_glare",
     "issue_type": "broken_part",
     "object_part": "side_mirror",
     "claim_status": "supported",
-    "claim_status_justification": "The image shows the side mirror glass is shattered/broken, supporting the user's claim that the mirror was damaged.",
+    "claim_status_justification": "img_1 clearly shows a red car's side mirror with extensively cracked/broken mirror glass, consistent with the customer's claim that the side mirror was damaged by a passing vehicle while parked.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "medium"

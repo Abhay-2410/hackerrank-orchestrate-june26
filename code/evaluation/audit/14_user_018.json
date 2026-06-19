@@ -56,15 +56,15 @@
     "all_unusable": false,
     "summary_text": "- img_1: acceptable quality"
   },
-  "confidence": 1.0,
+  "confidence": 0.9,
   "primary_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "img_1 clearly shows the MacBook Pro screen with extensive radial crack pattern emanating from a central impact point, fully sufficient to assess the claimed screen damage.",
+    "evidence_standard_met_reason": "img_1 clearly shows the MacBook Pro screen with extensive spider-web cracking pattern, fully satisfying REQ_LAPTOP_SCREEN_KEYBOARD_TRACKPAD and REQ_GENERAL_OBJECT_PART requirements.",
     "risk_flags": "none",
-    "issue_type": "glass_shatter",
+    "issue_type": "crack",
     "object_part": "screen",
     "claim_status": "supported",
-    "claim_status_justification": "img_1 shows a MacBook Pro with a severely spider-webbed screen featuring a central impact point and radiating cracks extending across the full display \u2014 consistent with the user's claim of screen shatter from compression during travel.",
+    "claim_status_justification": "img_1 shows a MacBook Pro with a clearly shattered/spider-webbed screen display glass featuring a central impact point with radiating crack lines across the panel, consistent with the customer's reported compression damage during travel.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "high"
@@ -72,12 +72,12 @@
   "escalated": false,
   "final_output": {
     "evidence_standard_met": true,
-    "evidence_standard_met_reason": "img_1 clearly shows the MacBook Pro screen with extensive radial crack pattern emanating from a central impact point, fully sufficient to assess the claimed screen damage.",
+    "evidence_standard_met_reason": "img_1 clearly shows the MacBook Pro screen with extensive spider-web cracking pattern, fully satisfying REQ_LAPTOP_SCREEN_KEYBOARD_TRACKPAD and REQ_GENERAL_OBJECT_PART requirements.",
     "risk_flags": "none",
-    "issue_type": "glass_shatter",
+    "issue_type": "crack",
     "object_part": "screen",
     "claim_status": "supported",
-    "claim_status_justification": "img_1 shows a MacBook Pro with a severely spider-webbed screen featuring a central impact point and radiating cracks extending across the full display \u2014 consistent with the user's claim of screen shatter from compression during travel.",
+    "claim_status_justification": "img_1 shows a MacBook Pro with a clearly shattered/spider-webbed screen display glass featuring a central impact point with radiating crack lines across the panel, consistent with the customer's reported compression damage during travel.",
     "supporting_image_ids": "img_1",
     "valid_image": true,
     "severity": "high"
